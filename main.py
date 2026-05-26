@@ -10,7 +10,15 @@ def encrypt(message):
         message = message.replace(old, new)
     return message
 
+def decrypt(message):
+    message = message + " "
+    for old, new in alphabet.decrypt:
+        message = message.replace(old, new)
+    return message
+
+
 
 ## Test section
 message = input("What's your message? ")
-print(encrypt(message))
+print(decrypt(message))
+
