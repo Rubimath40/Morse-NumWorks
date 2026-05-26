@@ -19,6 +19,10 @@ def decrypt(message):
 
 
 ## Test section
+menu = input("1. Encrypt to Morse\n2. Decrypt from Morse\nChoice? ")
 message = input("What's your message? ")
-print(decrypt(message))
+if menu == "1":
+    print(encrypt(message))
+else:
+    print(decrypt(message))
 
