@@ -16,6 +16,17 @@ def decrypt(message):
         message = message.replace(old, new)
     return message
 
+def send(message):
+    for i in message:
+        if i == ".":
+            mu.set_led((255,0,0))
+            time.sleep(0.1)
+        elif i == "_":
+            mu.set_led((255,0,0))
+            time.sleep(0.5)
+        else:
+            time.sleep(1)
+
 
 
 ## Test section
