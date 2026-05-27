@@ -26,6 +26,7 @@ def send(message):
             time.sleep(0.5)
         else:
             time.sleep(1)
+        mu.set_led((0,0,0))
 
 
 
