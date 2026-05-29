@@ -2,6 +2,7 @@
 Stores the two alphabet, one to encrypt an one to decrypt a message
 """
 encrypt = {
+    ",": "__..__",
     ".": "._._._ ",
     "A": "._ ",
     "B": "_... ",
@@ -32,6 +33,7 @@ encrypt = {
 }
 
 decrypt = [
+    ("__..__", ","),
     ("._._._", "."),
     (".___ ", "J"),
     ("_.__ ", "Y"),
