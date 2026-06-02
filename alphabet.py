@@ -4,6 +4,7 @@ Stores the two alphabet, one to encrypt an one to decrypt a message
 encrypt = [
     (".", "._._._ "),
     ("$", "..._.._ "),
+    ("?", "..__.. "),
     ("@", ".__._. "),
     ("!", ".____. "),
     (",", "__..__ "),
