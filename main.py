@@ -1,6 +1,7 @@
 import ion
 import mu
 import time
+import kandinsky
 
 import alphabet
 
@@ -29,19 +30,23 @@ def send(message, timeUnit=0.2):
         mu.set_led((0,0,0))
         time.sleep(timeUnit)
 
-def recieve(timeUnit=0.2):
+def receive(timeUnit=0.2):
     message = ""
     isPressed = False
     startTime = 0
     lastRelease = None
 
+    long = timeUnit * 3
+    space = timeUnit * 7
+
     while not ion.keydown(ion.KEY_BACKSPACE):
+        kandinsky.draw_string(message, 0, 0)
         if ion.keydown(ion.KEY_OK) and not isPressed:
             if lastRelease != None:
                 releaseTime = time.monotonic() - lastRelease
-                if  releaseTime < timeUnit * 3:
+                if releaseTime < long:
                     pass
-                elif    releaseTime < timeUnit * 7:
+                elif releaseTime < space:
                     message += " "
                 else:
                     message += "  "
@@ -52,7 +57,7 @@ def recieve(timeUnit=0.2):
             endTime = time.monotonic()
             clicDuration = endTime - startTime
 
-            if clicDuration < timeUnit * 3:
+            if clicDuration < long:
                 message += "."
             else:
                 message += "_"
@@ -62,3 +67,11 @@ def recieve(timeUnit=0.2):
 
     message += " "
     return message
+
+def liveSend():
+    while not ion.keydown(ion.KEY_BACKSPACE):
+        if ion.keydown(ion.KEY_OK):
+            mu.set_led((255,0,0))
+        else:
+            mu.set_led((0,0,0))
+
