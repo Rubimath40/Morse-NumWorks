@@ -7,13 +7,13 @@ import alphabet
 
 def encrypt(message):
     message = message.upper()
-    for old, new in alphabet.encrypt:
+    for old, new in alphabet.morse:
         message = message.replace(old, new)
     return message
 
 def decrypt(message):
     message += " "
-    for old, new in alphabet.decrypt:
+    for new, old in alphabet.morse:
         message = message.replace(old, new)
     return message
 
