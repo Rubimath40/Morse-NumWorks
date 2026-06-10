@@ -9,7 +9,7 @@ def get_pixel(x, y):
 def set_pixel(x, y, color):
     pass
 
-def draw_string(text, x, y, textColor, backgroundColor):
+def draw_string(text, x, y, textColor=(0,0,0), backgroundColor=(255,255,255)):
     pass
 
 def draw_line(x1, y1, x2, y2, color):
