@@ -34,6 +34,7 @@ class messageService:
 
     def receive(timeUnit=0.2):
         mu.fill((0,0,0))
+        kandinsky.draw_string("Press [BACKSPACE] to end message", 0, 204)
         message = ""
         isPressed = False
         startTime = 0
