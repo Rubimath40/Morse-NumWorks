@@ -1,23 +1,11 @@
 """
-This script is only used to avoid an error on computer
+This script is used to avoid error on computer and if you are running something other than Mu on your NumWorks.
+It replace many things used in mu by kandinsky
 """
-
+import kandinsky
 
 def set_led(color=(0,0,0)):
-    pass
-def get_led():
-    return (0,0,0)
+    kandinsky.fill_rect(15, 15, 290, 192, color)
 
-def gen_color():
-    return (0,0,0)
 def fill(color=(0,0,0)):
-    pass
-
-def collideRect(rect1, rect2):
-    return False
-def collideCircle(circle1, circle2):
-    return False
-def collideCircleRect(circle, rect):
-    return False
-def get_dir(pos1, pos2):
-    return (0.5, 0.5)
+    kandinsky.fill_rect(0, 0, 320, 222, color)
