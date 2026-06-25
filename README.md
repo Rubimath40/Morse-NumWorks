@@ -32,4 +32,4 @@ Your screen should look like that:\
 
 # How to use it?
 
-Once you installed all the files, you just have to run the main.py script. It automatically run the main() function and show the first menu. At that point, you just have to read.
+Once you installed all the files, you just have to run the main.py script. It automatically run the main() function and show the first menu. At that point, you just have to read. To exit the menu, press KEY_ZERO.
