@@ -120,7 +120,7 @@ def chooseMode(listChoices=["1. Send a message", "2. Receive a message"]):
     return selectedMode
 
 def main(timeUnit=0.3):
-    while True:
+    while not ion.keydown(ion.KEY_ZERO):
         mode = chooseMode()
         if mode == 2:
             morseMessage = messageService.receive(timeUnit)
