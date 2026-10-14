@@ -1,5 +1,5 @@
 # What is Morse-NumWorks?
-This project is to talk with my friends using the Morse code, with the NumWorks'LED. It use the mu module from the alternative Mu OS for NumWorks. For those who can't install the Mu OS because there calculator is locked, I made a small script that can replace the LED by a fillrect with kandinsky.
+This project is to talk with my friends using the Morse code, with the NumWorks'LED. It use the mu module from the alternative Mu OS for NumWorks. For those who can't install the Mu OS because there calculator is locked, I made a small script that can replace the LED by a fill_rect with **kandinsky**.
 
 # How to install it on your calculator?
 **Which OS do you have?**
@@ -8,9 +8,9 @@ This project is to talk with my friends using the Morse code, with the NumWorks'
 
 **/!\ You should not use this method if you are using something else for the risk of a reset**\
 If you are in that case, you have to install the 3 scripts. But that's easy because you can find it on the Numworks'website:\
-    The main one: https://my.numworks.com/python/rubimath40/morse_numworks\
-    alphabet.py:  https://my.numworks.com/python/rubimath40/alphabet\
-    mu.py:        https://my.numworks.com/python/rubimath40/mu\
+    [The main one](https://my.numworks.com/python/rubimath40/morse_numworks)
+    [alphabet.py](https://my.numworks.com/python/rubimath40/alphabet)
+    [mu.py](https://my.numworks.com/python/rubimath40/mu)
 Your screen should look like that:\
 <img width="412" height="288" alt="image" src="https://github.com/user-attachments/assets/68dc0473-5e22-4067-a4f0-e4a57cf708fa" />
 
